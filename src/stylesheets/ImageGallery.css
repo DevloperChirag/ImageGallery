@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(232, 170, 89);
+}
+.img-div {
+    position: relative;
+    background-color: rgb(28, 26, 26);
+    /* border: 2px solid red; */
+    
+}
+.image{
+object-fit:cover;
+
+}
+.user-info{
+    position: absolute;
+    transform:translateY(-150%) ;
+    color :white;
+}
+.section{
+    overflow: hidden;
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1530645722516-a0c947925cf0?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+}
+.section>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 200ms ;
+}
+.section>span{
+    /* font-size: 1rem; */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    color: rgb(255, 255, 255);
+     text-shadow: 0px 4px #000000;
+}
+.section>input{
+    position: absolute;
+    width:50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    vertical-align: middle;
+    outline: none;
+}
+
+.single-photo{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    display: none;
+}
+.cancel-icon{
+    cursor:pointer;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+    display: block;
+}
+.single-photo img{
+    width: fit-content;
+    height: 100%;
+    vertical-align:middle;
+    object-fit:cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
